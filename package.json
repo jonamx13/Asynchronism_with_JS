@@ -10,5 +10,8 @@
     "javascript"
   ],
   "author": "jonathan meixueiro lav.jonathanom@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
