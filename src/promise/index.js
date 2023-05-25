@@ -4,7 +4,7 @@ const promise = new Promise(function (resolve, reject) {
 
 const cows = 15;
 
-const countCows = new Promise(function (resolve, reject) {
+const countCows = new Promise(function (resolve, reject) { //Check if a promise is fulfilled or rejected under a conditional
     if(cows > 10) {
         resolve(`We have ${cows} cows in the farm`)
     } else {
@@ -12,8 +12,8 @@ const countCows = new Promise(function (resolve, reject) {
     }
 });
 
-countCows.then((result) => {
+countCows.then((result) => { // if fulfilled
     console.log(result);
-}).catch((error) => {
+}).catch((error) => { // if rejected
     console.log(error);
-}).finally(() => console.log('Finally'));
+}).finally(() => console.log('Finally')); // what we do when promised has finished
